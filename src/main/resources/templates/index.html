@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/add" method="post">
+		<table border="1">
+			<tr>
+				<th>船番</th>
+				<th>選手勝率</th>
+				<th>中間補正（選手-船番）</th>
+				<th>モーター勝率</th>
+				<th>中間補正（モーター-船番）</th>
+			</tr>
+			<tr>
+				<td>①</td>
+				<td><input type="text" name="racer"></td>
+				<td><input type="range" name="ha" min="0" max="1" step="0.1" oninput="this.nextElementSibling.value = this.value"><output id="rangeValue">0.5</output></td>
+				<td><input type="text" name="moter"></td>
+				<td><input type="range" name="hb" min="0" max="1" step="0.1" oninput="this.nextElementSibling.value = this.value"><output id="rangeValue">0.5</output></td>
+			</tr>
+			<tr>
+				<td>②</td>
+				<td><input type="text" name="racer"></td>
+				<td><input type="range" name="ha" min="0" max="1" step="0.1" oninput="this.nextElementSibling.value = this.value"><output id="rangeValue">0.5</output></td>
+				<td><input type="text" name="moter"></td>
+				<td><input type="range" name="hb" min="0" max="1" step="0.1" oninput="this.nextElementSibling.value = this.value"><output id="rangeValue">0.5</output></td>
+			</tr>
+			<tr>
+				<td>③</td>
+				<td><input type="text" name="racer"></td>
+				<td><input type="range" name="ha" min="0" max="1" step="0.1" oninput="this.nextElementSibling.value = this.value"><output id="rangeValue">0.5</output></td>
+				<td><input type="text" name="moter"></td>
+				<td><input type="range" name="hb" min="0" max="1" step="0.1" oninput="this.nextElementSibling.value = this.value"><output id="rangeValue">0.5</output></td>
+			</tr>
+			<tr>
+				<td>④</td>
+				<td><input type="text" name="racer"></td>
+				<td><input type="range" name="ha" min="0" max="1" step="0.1" oninput="this.nextElementSibling.value = this.value"><output id="rangeValue">0.5</output></td>
+				<td><input type="text" name="moter"></td>
+				<td><input type="range" name="hb" min="0" max="1" step="0.1" oninput="this.nextElementSibling.value = this.value"><output id="rangeValue">0.5</output></td>
+			</tr>
+			<tr>
+				<td>⑤</td>
+				<td><input type="text" name="racer"></td>
+				<td><input type="range" name="ha" min="0" max="1" step="0.1" oninput="this.nextElementSibling.value = this.value"><output id="rangeValue">0.5</output></td>
+				<td><input type="text" name="moter"></td>
+				<td><input type="range" name="hb" min="0" max="1" step="0.1" oninput="this.nextElementSibling.value = this.value"><output id="rangeValue">0.5</output></td>
+			</tr>
+			<tr>
+				<td>⑥</td>
+				<td><input type="text" name="racer"></td>
+				<td><input type="range" name="ha" min="0" max="1" step="0.1" oninput="this.nextElementSibling.value = this.value"><output id="rangeValue">0.5</output></td>
+				<td><input type="text" name="moter"></td>
+				<td><input type="range" name="hb" min="0" max="1" step="0.1" oninput="this.nextElementSibling.value = this.value"><output id="rangeValue">0.5</output></td>
+			</tr>
+		</table>
+		<input type="submit">
+
+	</form>
+	
+	<p>
+    <a href="/clear">全消去</a>
+</p>
+
+</body>
+</html>
+
