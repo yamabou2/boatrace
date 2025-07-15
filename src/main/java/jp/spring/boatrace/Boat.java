@@ -17,5 +17,10 @@ public class Boat implements Serializable{
 	private List<String> moter = new ArrayList<>();
 
 	private List<String> hoseiB = new ArrayList<>();
+	
+	//順位
+	private List<Integer> number = new ArrayList<>();
+	//並び替え用
+	private List<Double> result = new ArrayList<>();
 
 }
