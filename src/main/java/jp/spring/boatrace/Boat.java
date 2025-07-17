@@ -13,6 +13,9 @@ import lombok.Data;
 public class Boat implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
+	//階級List
+	private List<String> rank = new ArrayList<>();
+	
 	private List<String> racers = new ArrayList<>();
 	
 	private List<String> hoseiA = new ArrayList<>();
@@ -21,14 +24,7 @@ public class Boat implements Serializable{
 
 	private List<String> hoseiB = new ArrayList<>();
 	
-	//順位
-//	private List<Integer> number = new ArrayList<>();
-//	//並び替え用
-//	private List<Double> result = new ArrayList<>();
-////	並び替え後の順位
-//	private List<Integer> sortedNumber = new ArrayList<>();
-	
-//	Map試し
+//	順位sort機能
 	private Map<Double,Integer> sorted = new TreeMap<>(Collections.reverseOrder());
 
 }
